@@ -50,11 +50,12 @@ html header {
   left: 0;
   z-index: 2;
   margin-bottom: 20px;
+  font-size: 1.3em;
 }
 
-html header .nav-scrolled {
-  background-color: #014671;
-  box-shadow: 1px 1px 1px black;
+html .nav-scrolled {
+  background-color: #000000;
+  box-shadow: 4px 4px 4px black;
 }
 
 html header nav {
@@ -86,11 +87,13 @@ html header nav ul li {
   list-style: none;
   padding: 0.5rem 1rem;
   opacity: 0.75;
+  transition: 0.2s
 }
 
 html header nav ul li:hover {
   opacity: 1;
   color: #A6A486;
+  scale: 1.1;
 }
 
 html header nav ul li a {
@@ -153,14 +156,18 @@ html main .home {
   color: #e2e2e2;
   -webkit-filter: drop-shadow(1px 1px 1px black);
           filter: drop-shadow(1px 1px 1px black);
-}
-
-html main .home h1 {
+        }
+        
+        html main .home h1 {
+  font-weight: lighter;
   margin: 8vh 0px 0px 0px;
-  font-size: 8vw;
-  font-weight: 400;
+  font-size: 7vw;
   color: #e2e2e2;
   opacity: 1;
+}
+
+html main .home p{
+font-size: 1.5em;
 }
 
 html main .home .container {
@@ -175,7 +182,7 @@ html main .home .container {
 }
 
 html main .home .container img {
-  width: 30vw;
+  width: 25vw;
   margin: 0;
 }
 
@@ -187,7 +194,7 @@ html main .home .container p {
   display: flex;
   -ms-flex-negative: 2;
       flex-shrink: 2;
-  font-size: 6em;
+  font-size: 8rem;
 }
 
 html main .home .presaveLink {
@@ -218,6 +225,7 @@ html main .home .externalLinks {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+          margin: 3vh 0vw 3vh 0vw;
 }
 
 html main .home .externalLinks a {

@@ -1,3 +1,12 @@
+
+if (typeof window === 'object') { 
+    //check if document is loaded
+    document.addEventListener("DOMContentLoaded", 
+    () => {
+        console.log('finishedLoading')        
+    });
+    
+
 const mailingListForm = document.querySelector("#mailingListForm");
 mailingListForm.addEventListener("submit", handleFormSubmit);
 
@@ -33,5 +42,5 @@ async function handleFormSubmit(event){
          throw new Error(errorMessage);
      }
      return response.json();
-     }
-    
+    }
+}

@@ -1,7 +1,14 @@
+if (typeof window === 'object') { 
+    //check if document is loaded
+    document.addEventListener("DOMContentLoaded", 
+    () => {
+            console.log('finishedLoading')
+        });
+    
 // Fetch Live date data
 const fetchData = () => {
     console.log('Looking for data');
-    fetch(".../next/server/pages/liveDates.db")
+    fetch("liveDates.db")
         .then(response => {
             if(!response.ok){ throw Error ('ERROR') }
 
@@ -54,20 +61,40 @@ const mapToLiveSection = data =>{
 };
 
 // navbar style change on scroll intersection observer
+//defining intersection observers in case i want to change individual section styling later, for now just observing sectionOne
+const sectionOne = document.querySelector('.home');
+const sectionTwo = document.querySelector('.live');
+const sectionThree = document.querySelector('.media');
+const header = document.querySelector('.header');
 
-const userScrolled = false;
- window.addEventListener('scroll', (e) =>{
-     userHasScrolled = true;
-     const navbar = document.querySelector(".header");
-     navbar.classList.add("nav-scrolled");
- });
+const sections = document.querySelectorAll(".section");
 
-/*const windowfinder = document.querySelector(window)
- document.querySelector(window).scroll(function() { 
-    if(document.querySelector(this).scrollTop >= 60) { 
-        document.querySelector('.header').classList.add("nav-scrolled")
-        document.query 
+const options = {
+    root: null, //viewport
+    threshold: 0,
+    rootMargin: "-150px"
+};
+
+const sectionOneObserver = 
+    new IntersectionObserver(function(entries, observer){
+entries.forEach(entry => {
+    if(!entry.isIntersecting) {
+        header.classList.add("nav-scrolled");
     } else {
-        document.querySelector('.header').classList.remove("nav-scrolled");
+        header.classList.remove("nav-scrolled");
     }
-    });*/
+    
+})
+    }, options);
+
+    //individual section observers for use later if needed.
+
+    //observer.observe(sectionOne)
+    //observer.observe(sectionTwo)
+    //observer.observe(sectionThree)
+
+    sections.forEach(section => {
+        sectionOneObserver.observe(sectionOne)
+    })
+
+}

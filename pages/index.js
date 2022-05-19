@@ -1,17 +1,29 @@
 import Head from 'next/head'
-import Script from 'next/script'
+import image from 'next/image'
+
+
+import javascript from '../src/jsfunctions.js'
+import submitHandler from '../src/submitHandler.js'
+import YLImage1 from '../public/img/yardlander-shortlist_10.jpg'
+import YLImage2 from '../public/img/yardlander-shortlist_14.jpg'
+import instagram from '../public/SVG/instagram.svg'
+import spotify from '../public/SVG/spotify.svg'
+import tiktok from '../public/SVG/tiktok.svg'
+import youtube from '../public/SVG/youtube.svg'
+import artwork from '../public/img/artwork.jpeg'
+
 export default function Home() {
   return (
     <>
     <Head>
-  <meta charSet="UTF-8" />
-  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yardlander</title>
-  <link rel="shortcut icon" type="image/jpeg" href="#" />
- </Head>
+    <meta charSet="UTF-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yardlander</title>
+    <link rel="shortcut icon" type="image/jpeg" href="#" />
+    </Head>
 
-    <header className="header">
+    <header className="header nav-scrolled">
       <nav>
         <ul>
           <li>
@@ -30,23 +42,23 @@ export default function Home() {
       <div className='backgroundVideos'>
         <video
           className="desktopBackground"
-          autoPlay=""
-          muted=""
-          loop=""
-          src="../public/video/backgroundlandscape.mov"
+          autoPlay
+          muted
+          loop
+          src="video/backgroundlandscape.mov"
         />
         <video
-          src="../public/video/backgroundvertical.mp4"
+          src="video/backgroundvertical.mp4"
           className="mobileBackground"
           autoPlay=""
           muted=""
           loop=""
         />
       </div>
-      <div className="home" id="home">
+      <div className="home section" id="home">
         <h1>Yardlander</h1>
         <div className="container">
-          <img src="./public/artwork.jpeg" alt="" />
+          <img src='IMG/artwork.jpeg' alt="" />
         </div>
         <p>New Single Grow/Change scheduled for release 27th May!</p>
         <a
@@ -57,30 +69,30 @@ export default function Home() {
         </a>
         <div className="externalLinks">
           <a href="https://open.spotify.com/artist/420PkG61dGnfgkvnP3nFWN?si=fvefEpYaS-2oy2JGPeF_VQ">
-            <img src="../public/spotify.svg" alt="Yardlander Spotify" />
+            <img src="SVG/spotify.svg" alt="Yardlander Spotify" />
           </a>
           <a href="https://www.instagram.com/yardlander/?hl=en">
-            <img src="../public/instagram.svg" alt="Yardlander Instagram" />
+            <img src="SVG/instagram.svg" alt="Yardlander Instagram" />
           </a>
           <a href="https://www.tiktok.com/@yardlander?is_from_webapp=1&sender_device=pc">
-            <img src="../public/tiktok.svg" alt="Yardlander TikTok" />
+            <img src="SVG/tiktok.svg" alt="Yardlander TikTok" />
           </a>
           <a href="https://www.youtube.com/channel/UCETHPCjWcuRAfp6NU_cuQtQ">
-            <img src="../public/youtube.svg" alt="Yardlander Youtube" />
+            <img src="SVG/youtube.svg" alt="Yardlander Youtube" />
           </a>
         </div>
       </div>
-      <div className="live" id="live">
+      <div className="live section" id="live">
         <h1>
           Yardlander
           <br /> Live
         </h1>
         <div id="showContainer">
           <div className="showDetails"></div>
-          <img src="../public/yardlander-shortlist_14.jpg" alt="" />
+          <img src="IMG/yardlander-shortlist_14.jpg" alt="" />
         </div>
       </div>
-      <div className="media" id="media">
+      <div className="media section" id="media">
         <h1>Listen on Spotify:</h1>
         <iframe
           className="spotifyPlayer"
@@ -91,7 +103,7 @@ export default function Home() {
           height={380}
           frameBorder={0}
         />
-        <img src="../public/yardlander-shortlist_10.jpg" alt="" />
+        <img src="IMG/yardlander-shortlist_10.jpg" alt="" />
       </div>
       <div className="footer">
         <form action="./config/mailingList.db" id="mailingListForm">
@@ -107,9 +119,6 @@ export default function Home() {
     <footer>
 
     </footer>
-  <Script src='./api/jsfunctions' />
-  <Script src='./api/submitHandler.js' />
-  
   </>
   
   )
