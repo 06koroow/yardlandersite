@@ -63,6 +63,7 @@ const mapToLiveSection = data =>{
 // navbar style change on scroll intersection observer
 //defining intersection observers in case i want to change individual section styling later, for now just observing sectionOne
 const sectionOne = document.querySelector('.home');
+const sectionOneHalf = document.querySelector('.container');
 const sectionTwo = document.querySelector('.live');
 const sectionThree = document.querySelector('.media');
 const header = document.querySelector('.header');
@@ -72,7 +73,7 @@ const sections = document.querySelectorAll(".section");
 const options = {
     root: null, //viewport
     threshold: 0,
-    rootMargin: "-600px"
+    rootMargin: "100px"
 };
 
 const sectionOneObserver = 
@@ -94,7 +95,7 @@ entries.forEach(entry => {
     //observer.observe(sectionThree)
 
     sections.forEach(section => {
-        sectionOneObserver.observe(sectionOne)
+        sectionOneObserver.observe(sectionOneHalf);
     })
 
 }
