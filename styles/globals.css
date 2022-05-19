@@ -88,13 +88,27 @@ html header nav ul li {
   list-style: none;
   padding: 0.5rem 1rem;
   opacity: 0.75;
-  transition: 0.2s
 }
 
 html header nav ul li:hover {
+  transition: 0.2s;
   opacity: 1;
   color: #A6A486;
   scale: 1.1;
+}
+
+html header nav ul li a:focus {
+  opacity: 1;
+  color: #c2c2c2;
+  scale: 1.1;
+  text-decoration: underline;
+}
+
+html header nav ul li a:visited {
+  opacity: 1;
+  color: #c2c2c2;
+  scale: 1.1;
+  text-decoration: underline;
 }
 
 html header nav ul li a {
@@ -344,7 +358,7 @@ html main .media {
 html main .media h1 {
   font-weight: lighter;
   width: 100vw;
-  margin: 0 10vw 2vw 10vw;
+  margin: 4vw 10vw 4vw 10vw;
   font-size: 2rem;
 }
 
