@@ -300,10 +300,12 @@ html main .live #showContainer .showDetails .show table {
   border: 1px solid black;
   border-radius: 20px;
   margin-bottom: 15px;
+  font-size: 1em;
 }
 
 html main .live #showContainer .showDetails .show table td {
   width: 400px;
+  font-size: 1em;
 }
 
 html main .live img {
