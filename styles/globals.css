@@ -12,9 +12,10 @@ body {
     background-color: black;
     color: #e2e2e2;
     left: 0;
-    -ms-scroll-snap-type: y proximity;
+ /*   -ms-scroll-snap-type: y proximity;
         scroll-snap-type: y proximity;
-}
+*/
+      }
 
 a {
   color: inherit;
@@ -168,6 +169,7 @@ html main .home {
 
 html main .home p{
 font-size: 1.5em;
+padding:0px 10vw 0px 10vw;
 }
 
 html main .home .container {
@@ -282,7 +284,7 @@ html main .live #showContainer .showDetails {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  font-size: 1rem;
+  font-size: 2rem;
   border-radius: 20px;
 }
 
@@ -341,6 +343,7 @@ html main .media h1 {
   font-weight: lighter;
   width: 100vw;
   margin: 0 10vw 2vw 10vw;
+  font-size: 2rem;
 }
 
 html main .media .spotifyPlayer {
@@ -390,9 +393,12 @@ html main .footer form input {
       -ms-flex-align: center;
           align-items: center;
   width: 90%;
+  flex-shrink: 2;
 }
 
 html main .footer form button {
+  display: flex;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -402,8 +408,9 @@ html main .footer form button {
   background-color: #0269a9;
   color: #e2e2e2;
   border: none;
+  flex-basis: 100%;
   border-radius: 10px;
-  padding: 0.5em;
+  padding: 1em;
   -webkit-box-shadow: 1px 1px 1px #014671;
           box-shadow: 1px 1px 1px #014671;
 }
@@ -662,6 +669,7 @@ html main .footer form button:hover {
   main .media h1 {
     font-weight: lighter;
     width: 100vw;
+    font-size: 1.5em;
     margin: 0 10vw 2vw 10vw;
   }
   main .media .spotifyPlayer {
