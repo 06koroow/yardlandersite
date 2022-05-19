@@ -86,8 +86,7 @@ export default function Home() {
       </div>
       <div className="live section" id="live">
         <h1>
-          Yardlander
-          <br /> Live
+          Live
         </h1>
         <div id="showContainer">
           <div className="showDetails"></div>

@@ -267,6 +267,7 @@ html main .live {
 html main .live h1 {
   width: 100wv;
   font-weight: 400;
+  font-size: 5vw
 }
 
 html main .live #showContainer {
@@ -595,6 +596,7 @@ html main .footer form button:hover {
   }
   main .live h1 {
     width: 100wv;
+    font-size: 10vw;
     font-weight: 400;
   }
   main .live #showContainer {
@@ -666,7 +668,7 @@ html main .footer form button:hover {
         -ms-flex-pack: center;
             justify-content: center;
     max-width: 60vw;
-    margin: 0 20vw 0 20vw;
+    margin: 5vw 20vw 0 20vw;
   }
   main .media img {
     max-width: 80vw;
