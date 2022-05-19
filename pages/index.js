@@ -1,16 +1,17 @@
+//imports commented out, not currently used but will switch over at a later date
 import Head from 'next/head'
-import image from 'next/image'
+//import image from 'next/image'
 
 
-import javascript from '../src/jsfunctions.js'
-import submitHandler from '../src/submitHandler.js'
-import YLImage1 from '../public/img/yardlander-shortlist_10.jpg'
-import YLImage2 from '../public/img/yardlander-shortlist_14.jpg'
-import instagram from '../public/SVG/instagram.svg'
-import spotify from '../public/SVG/spotify.svg'
-import tiktok from '../public/SVG/tiktok.svg'
-import youtube from '../public/SVG/youtube.svg'
-import artwork from '../public/img/artwork.jpeg'
+//import javascript from '../src/jsfunctions.js'
+//import submitHandler from '../src/submitHandler.js'
+//import YLImage1 from '../public/img/yardlander-shortlist_10.jpg'
+//import YLImage2 from '../public/img/yardlander-shortlist_14.jpg'
+//import instagram from '../public/SVG/instagram.svg'
+//import spotify from '../public/SVG/spotify.svg'
+//import tiktok from '../public/SVG/tiktok.svg'
+//import youtube from '../public/SVG/youtube.svg'
+//import artwork from '../public/img/artwork.jpeg'
 
 export default function Home() {
   return (
