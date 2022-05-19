@@ -422,7 +422,7 @@ html main .footer form button:hover {
     left: 0;
   }
   .header {
-    background-color: #00000099;
+    background: transparent;
     margin-bottom: rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -440,9 +440,9 @@ html main .footer form button:hover {
     z-index: 2;
     margin-bottom: 20px;
   }
-  .header .header-scrolled {
-    background-color: #014671;
-    box-shadow: 1px 1px 1px black;
+  html .nav-scrolled {
+    background-color: #000000;
+    box-shadow: 4px 4px 4px black;
   }
   .header nav ul {
     display: -webkit-box;
