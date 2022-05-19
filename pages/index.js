@@ -58,7 +58,7 @@ export default function Home() {
       <div className="home section" id="home">
         <h1>Yardlander</h1>
         <div className="container">
-          <img src='IMG/artwork.jpeg' alt="" />
+          <img src='img/artwork.jpeg' alt="" />
         </div>
         <p>New Single Grow/Change scheduled for release 27th May!</p>
         <a
@@ -89,7 +89,7 @@ export default function Home() {
         </h1>
         <div id="showContainer">
           <div className="showDetails"></div>
-          <img src="IMG/yardlander-shortlist_14.jpg" alt="" />
+          <img src="img/yardlander-shortlist_14.jpg" alt="" />
         </div>
       </div>
       <div className="media section" id="media">
@@ -103,7 +103,7 @@ export default function Home() {
           height={380}
           frameBorder={0}
         />
-        <img src="IMG/yardlander-shortlist_10.jpg" alt="" />
+        <img src="img/yardlander-shortlist_10.jpg" alt="" />
       </div>
       <div className="footer">
         <form action="./config/mailingList.db" id="mailingListForm">
