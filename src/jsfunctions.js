@@ -72,7 +72,7 @@ const sections = document.querySelectorAll(".section");
 const options = {
     root: null, //viewport
     threshold: 0,
-    rootMargin: "0px"
+    rootMargin: "-600px"
 };
 
 const sectionOneObserver = 
