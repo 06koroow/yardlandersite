@@ -308,6 +308,13 @@ html main .live #showContainer .showDetails .show table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  overflow-x: scroll;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -316,17 +323,17 @@ html main .live #showContainer .showDetails .show table {
   border: 1px solid black;
   border-radius: 20px;
   margin-bottom: 15px;
-  font-size: 1em;
 }
 
 html main .live #showContainer .showDetails .show table td {
-  width: 400px;
   font-size: 1rem;
+  height: 1em;
+  width: 40vw;
 }
 
 html main .live img {
   max-width: 50vw;
-  min-width: 425px;
+  min-width: 250px;
   margin: auto;
   margin-bottom: 50px;
   -webkit-box-shadow: 1px 1px 1px black;
@@ -376,7 +383,7 @@ html main .media .spotifyPlayer {
 
 html main .media img {
   max-width: 40vw;
-  min-width: 400px;
+  min-width: 250px;
   margin: auto;
   margin-top: 2vh;
   margin-bottom: 50px;
@@ -565,7 +572,7 @@ html main .footer form button:hover {
     display: flex;
     -ms-flex-negative: 5;
     flex-shrink: 5;
-    font-size: 1rem;
+    font-size: 3rem !important;
     font-weight: 500;
     margin-bottom: 0%;
   }
@@ -586,6 +593,7 @@ html main .footer form button:hover {
   }
   main .home p {
     text-align: center;
+    font-size: smaller !important;
     -ms-flex-negative: 2;
     flex-shrink: 2;
     font-size: medium;
@@ -606,8 +614,12 @@ html main .footer form button:hover {
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
+  main .home .presaveLink {
+    font-size: 1rem !important;
+  }
   main .externalLinks a img {
     display: -webkit-box;
+    font-size: 2rem !important;
     display: -ms-flexbox;
     display: flex;
     -webkit-filter: drop-shadow(1px 1px 1px black);
@@ -662,6 +674,7 @@ html main .footer form button:hover {
     margin-bottom: 15px;
   }
   main .live #showContainer .showDetails .show table td {
+    font-size: 3vw !important;
     width: 400px;
   }
   main .live img {
