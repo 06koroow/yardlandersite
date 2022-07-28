@@ -63,12 +63,12 @@ export default function Home() {
         <div className="container">
           <img src='img/artwork.jpeg' alt="" />
         </div>
-        <p>New Single Grow/Change scheduled for release 27th May!</p>
+        <p>New Single Grow/Change Out Now!</p>
         <a
           className="presaveLink"
           href="https://distrokid.com/hyperfollow/yardlander/growchange"
         >
-          Pre-Save Grow/Change Here
+          Listen to Grow/Change on all major streaming services!
         </a>
         <div className="externalLinks">
           <a href="https://open.spotify.com/artist/420PkG61dGnfgkvnP3nFWN?si=fvefEpYaS-2oy2JGPeF_VQ">
