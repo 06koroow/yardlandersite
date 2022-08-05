@@ -61,7 +61,7 @@ export default function Home() {
       <div className="home section" id="home">
         <h1>Yardlander</h1>
         <div className="container">
-          <img src='img/artwork.jpeg' alt="" />
+          <Image src='img/artwork.jpeg' alt="" />
         </div>
         <p>New Single Grow/Change Out Now!</p>
         <a
@@ -72,16 +72,16 @@ export default function Home() {
         </a>
         <div className="externalLinks">
           <a href="https://open.spotify.com/artist/420PkG61dGnfgkvnP3nFWN?si=fvefEpYaS-2oy2JGPeF_VQ">
-            <img src="SVG/spotify.svg" alt="Yardlander Spotify" />
+            <Image src="SVG/spotify.svg" alt="Yardlander Spotify" />
           </a>
           <a href="https://www.instagram.com/yardlander/?hl=en">
-            <img src="SVG/instagram.svg" alt="Yardlander Instagram" />
+            <Image src="SVG/instagram.svg" alt="Yardlander Instagram" />
           </a>
           <a href="https://www.tiktok.com/@yardlander?is_from_webapp=1&sender_device=pc">
-            <img src="SVG/tiktok.svg" alt="Yardlander TikTok" />
+            <Image src="SVG/tiktok.svg" alt="Yardlander TikTok" />
           </a>
           <a href="https://www.youtube.com/channel/UCETHPCjWcuRAfp6NU_cuQtQ">
-            <img src="SVG/youtube.svg" alt="Yardlander Youtube" />
+            <Image src="SVG/youtube.svg" alt="Yardlander Youtube" />
           </a>
         </div>
       </div>
@@ -91,7 +91,7 @@ export default function Home() {
         </h1>
         <div id="showContainer">
           <div className="showDetails"></div>
-          <img src="img/yardlander-shortlist_14.jpg" alt="" />
+          <Image src="img/yardlander-shortlist_14.jpg" alt="" />
         </div>
       </div>
       <div className="media section" id="media">
@@ -105,7 +105,7 @@ export default function Home() {
           height={380}
           frameBorder={0}
         />
-        <img src="img/yardlander-shortlist_10.jpg" alt="" />
+        <Image src="img/yardlander-shortlist_10.jpg" alt="" />
       </div>
       <div className="footer">
         <form action="./config/mailingList.db" id="mailingListForm">
