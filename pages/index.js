@@ -1,6 +1,6 @@
 //imports commented out, not currently used but will switch over at a later date
 import Head from 'next/head'
-import image from 'next/image'
+import Image from 'next/image'
 
 
 import javascript from '../src/jsfunctions.js'
