@@ -1,6 +1,5 @@
-//imports commented out, not currently used but will switch over at a later date
 import Head from 'next/head'
-import Image from 'next/image'
+//import Image from 'next/image'
 
 
 import javascript from '../src/jsfunctions.js'
@@ -61,7 +60,9 @@ export default function Home() {
       <div className="home section" id="home">
         <h1>Yardlander</h1>
         <div className="container">
-          <Image src='img/artwork.jpeg' alt="" />
+          <picture>
+            <img src='img/artwork.jpeg' alt="" />
+          </picture>
         </div>
         <p>New Single Grow/Change Out Now!</p>
         <a
@@ -72,16 +73,24 @@ export default function Home() {
         </a>
         <div className="externalLinks">
           <a href="https://open.spotify.com/artist/420PkG61dGnfgkvnP3nFWN?si=fvefEpYaS-2oy2JGPeF_VQ">
-            <Image src="SVG/spotify.svg" alt="Yardlander Spotify" />
+            <picture>
+              <img src="SVG/spotify.svg" alt="Yardlander Spotify" />
+            </picture>
           </a>
           <a href="https://www.instagram.com/yardlander/?hl=en">
-            <Image src="SVG/instagram.svg" alt="Yardlander Instagram" />
+            <picture>
+              <img src="SVG/instagram.svg" alt="Yardlander Instagram" />
+            </picture>
           </a>
           <a href="https://www.tiktok.com/@yardlander?is_from_webapp=1&sender_device=pc">
-            <Image src="SVG/tiktok.svg" alt="Yardlander TikTok" />
+            <picture>
+              <img src="SVG/tiktok.svg" alt="Yardlander TikTok" />
+            </picture>
           </a>
           <a href="https://www.youtube.com/channel/UCETHPCjWcuRAfp6NU_cuQtQ">
-            <Image src="SVG/youtube.svg" alt="Yardlander Youtube" />
+            <picture>
+              <img src="SVG/youtube.svg" alt="Yardlander Youtube" />
+            </picture>
           </a>
         </div>
       </div>
@@ -91,7 +100,9 @@ export default function Home() {
         </h1>
         <div id="showContainer">
           <div className="showDetails"></div>
-          <Image src="img/yardlander-shortlist_14.jpg" alt="" />
+          <picture>
+            <img src="img/yardlander-shortlist_14.jpg" alt="" />
+          </picture>
         </div>
       </div>
       <div className="media section" id="media">
@@ -105,7 +116,9 @@ export default function Home() {
           height={380}
           frameBorder={0}
         />
-        <Image src="img/yardlander-shortlist_10.jpg" alt="" />
+        <picture>
+          <img src="img/yardlander-shortlist_10.jpg" alt="" />
+        </picture>
       </div>
       <div className="footer">
         <form action="./config/mailingList.db" id="mailingListForm">
